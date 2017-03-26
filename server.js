@@ -40,13 +40,13 @@ io.sockets.on('connection',function(socket){
         socket.broadcast.emit('toclient',data); // 자신을 제외하고 다른 클라이언트에게 보냄
         socket.emit('toclient',data); // 해당 클라이언트에게만 보냄. 다른 클라이언트에 보낼려면?
         console.log('Message from client :'+data.msg);
-    });
-    if(!data.msg==""){
-        notificationHubService.gcm.send(null, {data:{id:socket.id, message:data.msg}}, function(error){
+        if(!data.msg==""){
+          notificationHubService.gcm.send(null, {data:{id:socket.id, message:data.msg}}, function(error){
             if(!error){
-                //notification sent
-                    console.log('send');
+              //notification sent
+              console.log('send');
             }
-        });
-    }
+          });
+        }
+    });
 });
