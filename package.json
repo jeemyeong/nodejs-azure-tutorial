@@ -1,0 +1,25 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "express" : "*",
+    "ejs" : "*",
+    "socket.io" : "*"
+  },
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeemyeong/nodejs-azure-tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeemyeong/nodejs-azure-tutorial/issues"
+  },
+  "homepage": "https://github.com/jeemyeong/nodejs-azure-tutorial#readme"
+}
